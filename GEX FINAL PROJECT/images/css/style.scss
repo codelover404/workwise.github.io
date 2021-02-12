@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;700;300&display=swap");
+
+$primary-color: #e44d3a;
+$bg-color: #f2f2f2;
+$section-color: #ffffff;
+$text_color: #fff;
+$scondary_text: #333;
+$primary_shadow: 0 0 1px 2px #eee;
+@mixin d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+body {
+  background-color: #f2f2f2;
+}
+.top-navigation {
+  background-color: $primary-color;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  // @include d-flex;
+  // background-color: $primary-color;
+  line-height: 80px;
+  .navigation_logo {
+    float: left;
+    width: 5%;
+  }
+  .navigation_items {
+    float: left;
+    margin-left: 28%;
+    width: 50%;
+    // line-height: 80px;
+
+    height: 70px;
+  }
+  ul {
+    height: inherit;
+    line-height: 90px;
+    margin: 0;
+    li {
+      line-height: 14.7px;
+
+      display: inline-block;
+      text-align: center;
+      margin: 0 20px;
+
+      a {
+        color: $text_color;
+        font-size: 0.8rem;
+        &:hover {
+          color: #eee;
+          text-decoration: none;
+        }
+        span {
+          display: block;
+          i {
+            color: $text_color;
+          }
+        }
+      }
+    }
+  }
+  .user_account {
+    float: right;
+    width: 10%;
+    height: 70px;
+    margin-left: 31px;
+    border-left: 1px solid #3333333b;
+    padding-left: 10px;
+
+    position: relative;
+
+    a {
+      color: $text_color;
+      font-size: 0.8rem;
+      margin-left: 0.5rem;
+      &:hover {
+        color: $text_color;
+        text-decoration: none;
+      }
+    }
+    i {
+      color: $text_color;
+      font-size: 0.8rem;
+      margin-left: 0.5rem;
+    }
+  }
+  .navigation_toggler {
+    width: 10%;
+    float: right;
+    i {
+      color: $text_color;
+      font-size: 2rem;
+      display: none;
+    }
+  }
+  .user_account_popup {
+    width: 226px;
+    background-color: $text_color;
+    position: absolute;
+    left: -114px;
+    padding: 20px;
+    color: $scondary_text;
+    box-shadow: $primary_shadow;
+    h5 {
+      margin: 0;
+      border-bottom: 1px solid $scondary_text;
+      padding-bottom: 17px;
+    }
+    h6 {
+      border-top: 1px solid $scondary_text;
+      padding-top: 12px;
+      text-align: center;
+    }
+    a {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      display: block;
+      line-height: 1.5rem;
+      color: $scondary_text;
+      text-decoration: none;
+      &:hover {
+        color: $scondary_text;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  nav {
+    .navigation_items {
+      display: none;
+    }
+    .navigation_toggler {
+      i {
+        display: block;
+        height: inherit;
+        line-height: inherit;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+// navigation end
+
+.searchbar {
+  display: inherit;
+  width: 100%;
+  input {
+    padding: 10px 15px;
+    box-shadow: $primary_shadow;
+  }
+  button {
+    box-shadow: $primary_shadow;
+    outline: none;
+    background-color: $primary-color;
+    color: $text_color;
+    border-radius: 0;
+    padding: 0 25px;
+  }
+}
+// .Profile_section::before {
+//   content: "";
+//   background-color: $primary-color;
+//   position: absolute;
+//   width: inherit;
+//   height: 500px;
+// }
+.Profile_section {
+  // width: 100%;
+  padding: 0;
+  position: relative;
+  box-shadow: $primary_shadow;
+  background-color: $text_color;
+  text-align: center;
+  background-color: $text_color;
+
+  .profile_colered_section {
+    background-color: $primary-color;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    padding: 40px;
+  }
+  .profile_section_content {
+    padding-top: 55%;
+    padding-bottom: 20px;
+    h4 {
+      margin-top: 20px;
+      font-weight: 400;
+    }
+    small {
+      color: #333;
+    }
+    span {
+      font-size: 1.5rem;
+    }
+  }
+  img {
+    border: 5px solid $text_color;
+    border-radius: 50%;
+  }
+
+  span {
+    display: block;
+  }
+  a {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
+
+// suggestion section
+
+.suggested_section {
+  margin-top: 40px;
+  padding: 40px 18px;
+  background-color: $text_color;
+  box-shadow: $primary_shadow;
+
+  .suggested_section_items {
+    display: flex;
+    justify-content: space-between;
+
+    height: 80px;
+    span {
+      text-align: center;
+      font-size: 0.9rem;
+      text-align: start;
+      display: block;
+      &:nth-child(1) {
+        font-weight: bold;
+      }
+    }
+    i {
+      padding: 12px;
+      box-shadow: $primary_shadow;
+    }
+    .suggested_skills {
+      color: #8c8c8c;
+      font-weight: lighter;
+    }
+  }
+  .suggested_view_more {
+    text-align: center;
+    width: 100%;
+    color: $primary-color;
+  }
+}
+
+// post a job and project section`
+
+// middle section
+.post_projects_section {
+  background-color: $text_color;
+  box-shadow: $primary_shadow;
+  border-top: 4px solid $primary-color;
+  padding: 17px;
+
+  img {
+    width: 12%;
+  }
+  a {
+    margin: 7px;
+    float: right;
+    text-decoration: none;
+    padding: 8px 10px;
+    background-color: #e5e5e5;
+    color: #999999;
+    transition: 0.5s;
+    border-radius: 3px;
+    &:hover {
+      background-color: $primary-color;
+      color: $text_color;
+    }
+  }
+  .active {
+    color: $text_color;
+    background-color: $primary-color;
+  }
+}
+
+// poster section
+.post_bar {
+  width: 100%;
+  height: 100vh;
+  padding: 18px;
+  background-color: $text_color;
+  box-shadow: $primary_shadow;
+  margin-top: 20px;
+  // display: flex;
+  // justify-content: space-between;
+  .post_title {
+    float: left;
+  }
+
+  img {
+    float: left;
+    width: 9%;
+  }
+  .post_content {
+    float: left;
+    padding-left: 10px;
+    span {
+      font-size: 0.8rem;
+      display: block;
+      &:nth-child(1) {
+        font-weight: bold;
+      }
+    }
+  }
+  .more_icon {
+    float: right;
+    i {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.poster_location {
+  padding: 10px;
+  clear: both;
+  .poster_location_left {
+    i:nth-child(1) {
+      color: skyblue;
+    }
+    i {
+      font-weight: bold;
+      color: greenyellow;
+    }
+    span {
+      font-size: 0.8rem;
+    }
+  }
+}

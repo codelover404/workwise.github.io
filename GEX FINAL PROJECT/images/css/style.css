@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;700;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.top-navigation {
+  background-color: #e44d3a;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+}
+
+nav .navigation_logo {
+  float: left;
+  width: 5%;
+}
+
+nav .navigation_items {
+  float: left;
+  margin-left: 28%;
+  width: 50%;
+  height: 70px;
+}
+
+nav ul {
+  height: inherit;
+  line-height: 90px;
+  margin: 0;
+}
+
+nav ul li {
+  line-height: 14.7px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+nav ul li a:hover {
+  color: #eee;
+  text-decoration: none;
+}
+
+nav ul li a span {
+  display: block;
+}
+
+nav ul li a span i {
+  color: #fff;
+}
+
+nav .user_account {
+  float: right;
+  width: 10%;
+  height: 70px;
+  margin-left: 31px;
+  border-left: 1px solid #3333333b;
+  padding-left: 10px;
+  position: relative;
+}
+
+nav .user_account a {
+  color: #fff;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+nav .user_account a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .user_account i {
+  color: #fff;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+nav .navigation_toggler {
+  width: 10%;
+  float: right;
+}
+
+nav .navigation_toggler i {
+  color: #fff;
+  font-size: 2rem;
+  display: none;
+}
+
+nav .user_account_popup {
+  width: 226px;
+  background-color: #fff;
+  position: absolute;
+  left: -114px;
+  padding: 20px;
+  color: #333;
+  -webkit-box-shadow: 0 0 1px 2px #eee;
+          box-shadow: 0 0 1px 2px #eee;
+}
+
+nav .user_account_popup h5 {
+  margin: 0;
+  border-bottom: 1px solid #333;
+  padding-bottom: 17px;
+}
+
+nav .user_account_popup h6 {
+  border-top: 1px solid #333;
+  padding-top: 12px;
+  text-align: center;
+}
+
+nav .user_account_popup a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+  line-height: 1.5rem;
+  color: #333;
+  text-decoration: none;
+}
+
+nav .user_account_popup a:hover {
+  color: #333;
+}
+
+@media (max-width: 1100px) {
+  nav .navigation_items {
+    display: none;
+  }
+  nav .navigation_toggler i {
+    display: block;
+    height: inherit;
+    line-height: inherit;
+    margin-left: 20px;
+  }
+}
+
+.searchbar {
+  display: inherit;
+  width: 100%;
+}
+
+.searchbar input {
+  padding: 10px 15px;
+  -webkit-box-shadow: 0 0 1px 2px #eee;
+          box-shadow: 0 0 1px 2px #eee;
+}
+
+.searchbar button {
+  -webkit-box-shadow: 0 0 1px 2px #eee;
+          box-shadow: 0 0 1px 2px #eee;
+  outline: none;
+  background-color: #e44d3a;
+  color: #fff;
+  border-radius: 0;
+  padding: 0 25px;
+}
+
+.Profile_section {
+  padding: 0;
+  position: relative;
+  -webkit-box-shadow: 0 0 1px 2px #eee;
+          box-shadow: 0 0 1px 2px #eee;
+  background-color: #fff;
+  text-align: center;
+  background-color: #fff;
+}
+
+.Profile_section .profile_colered_section {
+  background-color: #e44d3a;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  padding: 40px;
+}
+
+.Profile_section .profile_section_content {
+  padding-top: 55%;
+  padding-bottom: 20px;
+}
+
+.Profile_section .profile_section_content h4 {
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.Profile_section .profile_section_content small {
+  color: #333;
+}
+
+.Profile_section .profile_section_content span {
+  font-size: 1.5rem;
+}
+
+.Profile_section img {
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.Profile_section span {
+  display: block;
+}
+
+.Profile_section a {
+  text-decoration: none;
+  color: #e44d3a;
+}
+
+.suggested_section {
+  margin-top: 40px;
+  padding: 40px 18px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 1px 2px #eee;
+          box-shadow: 0 0 1px 2px #eee;
+}
+
+.suggested_section .suggested_section_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80px;
+}
+
+.suggested_section .suggested_section_items span {
+  text-align: center;
+  font-size: 0.9rem;
+  text-align: start;
+  display: block;
+}
+
+.suggested_section .suggested_section_items span:nth-child(1) {
+  font-weight: bold;
+}
+
+.suggested_section .suggested_section_items i {
+  padding: 12px;
+  -webkit-box-shadow: 0 0 1px 2px #eee;
+          box-shadow: 0 0 1px 2px #eee;
+}
+
+.suggested_section .suggested_section_items .suggested_skills {
+  color: #8c8c8c;
+  font-weight: lighter;
+}
+
+.suggested_section .suggested_view_more {
+  text-align: center;
+  width: 100%;
+  color: #e44d3a;
+}
+
+.post_projects_section {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 1px 2px #eee;
+          box-shadow: 0 0 1px 2px #eee;
+  border-top: 4px solid #e44d3a;
+  padding: 17px;
+}
+
+.post_projects_section img {
+  width: 12%;
+}
+
+.post_projects_section a {
+  margin: 7px;
+  float: right;
+  text-decoration: none;
+  padding: 8px 10px;
+  background-color: #e5e5e5;
+  color: #999999;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 3px;
+}
+
+.post_projects_section a:hover {
+  background-color: #e44d3a;
+  color: #fff;
+}
+
+.post_projects_section .active {
+  color: #fff;
+  background-color: #e44d3a;
+}
+
+.post_bar {
+  width: 100%;
+  height: 100vh;
+  padding: 18px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 1px 2px #eee;
+          box-shadow: 0 0 1px 2px #eee;
+  margin-top: 20px;
+}
+
+.post_bar .post_title {
+  float: left;
+}
+
+.post_bar img {
+  float: left;
+  width: 9%;
+}
+
+.post_bar .post_content {
+  float: left;
+  padding-left: 10px;
+}
+
+.post_bar .post_content span {
+  font-size: 0.8rem;
+  display: block;
+}
+
+.post_bar .post_content span:nth-child(1) {
+  font-weight: bold;
+}
+
+.post_bar .more_icon {
+  float: right;
+}
+
+.post_bar .more_icon i {
+  font-size: 1.5rem;
+}
+
+.poster_location {
+  padding: 10px;
+  clear: both;
+}
+
+.poster_location .poster_location_left i:nth-child(1) {
+  color: skyblue;
+}
+
+.poster_location .poster_location_left i {
+  font-weight: bold;
+  color: greenyellow;
+}
+
+.poster_location .poster_location_left span {
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=style.css.map */
